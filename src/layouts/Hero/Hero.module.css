@@ -1,5 +1,25 @@
 .wrapper {
-  background: #c4c4c4;
+  background: url(https://bobapunks.com/static/media/background.f1bed94d.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  z-index: 50;
+}
+
+.wrapper:before {
+  background: radial-gradient(circle, transparent 0, #000 80%, #000 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 15;
+  z-index: -1;
 }
 
 .hero {

@@ -13,7 +13,7 @@ function Hero() {
           <h1
             className={`${
               isBellow500px ? "fs-40px" : "fs-52px"
-            } weight-8 black`}
+            } weight-8 white`}
             style={{ letterSpacing: "14.5px" }}
           >
             JETELEE
