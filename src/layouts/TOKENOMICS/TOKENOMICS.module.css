@@ -1,0 +1,59 @@
+.cards {
+  display: flex;
+}
+
+.cards > div {
+  flex: 1;
+}
+
+.cards > :not(:last-child) {
+  margin-right: 50px;
+}
+
+.joinTelegramButton {
+  padding: 22px 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  background-color: #229ed9;
+  border-radius: 44px;
+  margin: 0 auto;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease;
+  width: fit-content;
+}
+
+.joinTelegramButton > :not(:last-child) {
+  margin-right: 20px;
+}
+
+.joinTelegramButton:hover {
+  opacity: 0.8;
+  color: #229ed9;
+  background-color: white;
+}
+
+@media (max-width: 1100px) {
+  .cards > :not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 760px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards > :not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .joinTelegramButton {
+    padding: 22px 30px;
+  }
+}

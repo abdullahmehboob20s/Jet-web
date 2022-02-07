@@ -1,0 +1,25 @@
+.cards {
+  display: flex;
+  max-width: 878px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cards > div {
+  flex: 1;
+}
+
+.cards > :not(:last-child) {
+  margin-right: 28px;
+}
+
+@media (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .cards > :not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}

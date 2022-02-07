@@ -1,0 +1,29 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 100;
+  transition: all 0.2s ease;
+}
+
+.wrapper.scrolled {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+}
+
+.navbarRight {
+  display: flex;
+  align-items: center;
+}
+
+.navbarRight > :not(:last-child) {
+  margin-right: 15px;
+}

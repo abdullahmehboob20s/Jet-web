@@ -1,0 +1,34 @@
+.wrapper {
+  background: rgba(25, 25, 25, 0.19);
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  max-width: 930px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section > :not(:last-child) {
+  margin-right: 72px;
+}
+
+.sectionLeft {
+  max-width: 200px;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .section {
+    flex-direction: column;
+  }
+  .section > :not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  .sectionLeft {
+    max-width: 100px;
+  }
+}
