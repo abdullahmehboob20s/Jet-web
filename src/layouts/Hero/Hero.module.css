@@ -9,18 +9,6 @@
   position: relative;
   z-index: 50;
 }
-/* 
-.wrapper:before {
-  background: radial-gradient(circle, transparent 0, #000 80%, #000 100%);
-  content: "";
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 15;
-  z-index: -1;
-} */
 
 .hero {
   display: flex;
@@ -47,6 +35,24 @@
 
 .playButton svg {
   display: flex;
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    background-position: 80%;
+  }
+
+  .wrapper:before {
+    background: rgba(0, 0, 0, 0.7);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 15;
+    z-index: -1;
+  }
 }
 
 @media (max-width: 500px) {
