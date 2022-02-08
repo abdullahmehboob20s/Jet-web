@@ -1,5 +1,5 @@
 .wrapper {
-  background: url(https://bobapunks.com/static/media/background.f1bed94d.jpg);
+  background: url(../../assets/images/hero-bg.jpg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,7 +9,7 @@
   position: relative;
   z-index: 50;
 }
-
+/* 
 .wrapper:before {
   background: radial-gradient(circle, transparent 0, #000 80%, #000 100%);
   content: "";
@@ -20,7 +20,7 @@
   width: 100%;
   z-index: 15;
   z-index: -1;
-}
+} */
 
 .hero {
   display: flex;
